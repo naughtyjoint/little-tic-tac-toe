@@ -1,0 +1,25 @@
+{
+  "name": "ttt-game",
+  "version": "1.0.0",
+  "description": "Little tic tac toe game",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch '**/*.ts' --exec ts-node index.ts",
+    "bundle-colyseus-client": "browserify ./node_modules/colyseus.js/lib/index.js -s Colyseus -o client/colyseus.js",
+    "build": "npm run bundle-colyseus-client",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "NaughtyJoint",
+  "license": "MIT",
+  "dependencies": {
+    "colyseus": "^0.9.17",
+    "colyseus.js": "^0.9.14",
+    "express": "^4.16.3",
+    "nodemon": "^1.18.4"
+  },
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "ts-node": "^5.0.1",
+    "typescript": "^3.1.1"
+  }
+}
