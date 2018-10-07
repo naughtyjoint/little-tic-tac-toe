@@ -34,6 +34,7 @@ export class TTTState {
                 this.players[ client.sessionId ] = new Player('X',[]);
             }
         }
+        this.resetPlayer();
         this.state[ this.roomId ].clientNum ++; 
         let clientInfo = this.players [client.sessionId];
         return {

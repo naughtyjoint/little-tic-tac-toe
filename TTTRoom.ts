@@ -123,7 +123,6 @@ export class TTTRoom extends Room<TTTState> {
         this.state.state[ this.roomId ].gameBoard = [];
         this.state.state[ this.roomId ].step = 0;
         this.state.state[ this.roomId ].countdown = 60;
-        this.state.resetPlayer();
         console.log(client.id + ' left.');
         this.broadcast(`${ client.id } left.`);
         this.clock.stop();
