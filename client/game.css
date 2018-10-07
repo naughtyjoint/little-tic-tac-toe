@@ -146,7 +146,9 @@ p {
     background-color: #F5F5F5;
 }
 
-#banner {
+#banner,
+#state,
+#timer {
     font-size: 20px;
 }
 

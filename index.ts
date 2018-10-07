@@ -10,6 +10,13 @@ const gameServer = new Server({
   server: createServer(app)
 });
 
+app.use(express.static('client'));
+
+app.get('/tictactoe', function(req, res) {
+  res.sendFile('client/tic-tac-toe.html', {root: __dirname })
+});
+
+
 gameServer.register('tic_tac_toe', TTTRoom).
     on('create', (room) => console.log(`room created: ${ room.roomId }`));
 

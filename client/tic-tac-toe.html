@@ -14,35 +14,26 @@
 
     <body>
         <h1>Tic Tac Toe</h1>
+        <div id="state"></div>
         <div id="banner"></div>
-        <p></p>Your choice : </p>
-        <div>
-            <input type="number" id="num" max="9" min="1">
-            <input type="submit" onclick="tictac()">
-        </div>
-        
+        <div id="timer"></div>
         <table id="board" class="board">
             <tr>
-                <td id="one" class="even"></td>
-                <td id="two"></td>
-                <td id="three" class="even"></td>
+                <td id="one" class="even" onclick="tictac('one')"></td>
+                <td id="two" onclick="tictac('two')"></td>
+                <td id="three" class="even" onclick="tictac('three')"></td>
             </tr>
             <tr>
-                <td id="four"></td>
-                <td id="five" class="even"></td>
-                <td id="six"></td>
+                <td id="four" onclick="tictac('four')"></td>
+                <td id="five" class="even" onclick="tictac('five')"></td>
+                <td id="six" onclick="tictac('six')"></td>
             </tr>
             <tr>
-                <td id="seven" class="even"></td>
-                <td id="eight"></td>
-                <td id="nine" class="even"></td>
+                <td id="seven" class="even" onclick="tictac('seven')"></td>
+                <td id="eight" onclick="tictac('eight')"></td>
+                <td id="nine" class="even" onclick="tictac('nine')"></td>
             </tr>
         </table>
-        <script>
-            // function sendTictac() {
-            //     var x = document.getElementById('num').value;
-            //     tictac(x)
-            // }
-        </script>
+
     </body>
 </html>
